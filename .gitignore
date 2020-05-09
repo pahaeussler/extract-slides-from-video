@@ -1,0 +1,17 @@
+# Virtualenv
+env
+
+# Data Folders
+pictures
+videos
+pdfs
+
+Generate files
+
+*.pdf
+*.jpg
+
+# Visual studio code
+.vscode
+
+__pycache__
