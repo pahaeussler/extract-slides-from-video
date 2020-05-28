@@ -8,9 +8,9 @@ def makePdf(output, path):
     output = check_extention(output, ".pdf")
     pdf = FPDF()
     dirs = sorted(os.listdir(path))
-    cover = Image.open("{}/{}".format(path,dirs[0]))
+    cover = Image.open("{}/{}".format(path, dirs[0]))
     width, height = cover.size
-    pdf = FPDF(unit = "pt", format = [width, height])
+    pdf = FPDF(unit="pt", format=[width, height])
     check_dir("pdfs")
     for image in dirs:
         pdf.add_page()

@@ -5,12 +5,14 @@ from pdf import makePdf
 from settings import DELETE_IMAGES
 from files import delete_folder
 
+
 def run(input_name, extention, output):
     extract_succes = extract_images(input_name, extention)
     if extract_succes:
-        makePdf(output, "pictures/{}".format(input_name))
+        makePdf(output, "images/{}".format(input_name))
         if DELETE_IMAGES:
-            delete_folder("pictures/{}".format(input_name))
+            delete_folder("images/{}".format(input_name))
+
 
 if __name__ == "__main__":
     input_name = sys.argv[1]
