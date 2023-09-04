@@ -3,4 +3,4 @@ opencv-python==4.2.0.34
 
 # PDF
 fpdf==1.7.2 
-Pillow==6.2.2
+Pillow==9.3.0
